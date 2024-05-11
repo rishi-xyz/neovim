@@ -13,6 +13,9 @@ return {
 
         local mason_tool_installer = require("mason-tool-installer")
 
+        opts = {
+            ensure_installed = { "clangd" },
+        }
         -- enable mason and configure icons
         mason.setup({
             ui = {
